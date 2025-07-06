@@ -8,8 +8,8 @@ class LinearNavierStokesSolver:
 
     def __init__(self,
                  omega_s=20.0 * 2 * np.pi,
-                 alpha_s=20.0 * 2 * np.pi,
-                 amplitude=0.01,
+                 alpha_s=10.0 * 2 * np.pi,
+                 amplitude=0.001,
                  u_inf=2.0,
                  nu=0.01,
                  rho=1.2,
