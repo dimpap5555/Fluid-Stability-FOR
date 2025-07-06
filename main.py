@@ -1,8 +1,14 @@
 # This is a sample Python script.
+from solver import LinearNavierStokesSolver
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+def main():
+    solver = LinearNavierStokesSolver()
+    vel_anim = solver.animate_velocity()
+    force_anim = solver.animate_wall_forces()
+    return vel_anim, force_anim
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -14,3 +20,5 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    main()
